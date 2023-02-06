@@ -1,13 +1,13 @@
 # Exercise - Rollback
 AWSTemplateFormatVersion: 2010-09-09
-Description: A Template that creates an EC2 Instance 
+Description: A Template that creates an EC2 Instance on krark2 key
 Resources:
   EC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
-      KeyName: krak
+      KeyName: krak2
       ImageId: 'ami-095413544ce52437d' # you may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
       InstanceType: t3.micro
   InstanceSecurityGroup:
