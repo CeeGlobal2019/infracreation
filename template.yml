@@ -1,6 +1,6 @@
 # Exercise - Rollback
 AWSTemplateFormatVersion: 2010-09-09
-Description: Template that creates an EC2 instance and open SSH port 22
+Description: EC2 instance provisioning
 Resources:
   EC2Instance:
     Type: 'AWS::EC2::Instance'
